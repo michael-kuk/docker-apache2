@@ -38,4 +38,6 @@ ENV SSL_KEY=/etc/ssl/private/ssl-cert-snakeoil.key
 
 RUN a2ensite default-ssl.conf
 
+ADD ./apache2.conf /etc/apache2/apache2.conf
+
 EXPOSE 80 443
